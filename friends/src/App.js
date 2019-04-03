@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 
 import axios from 'axios'
 import './App.css';
+import List from './List';
 
 class App extends Component {
   constructor(){
@@ -23,8 +24,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-      here:
-        
+      
+
+        <List
+          list ={this.state.friendList}
+        />
+        {console.log(this.state.friendList)}
        
       </div>
     );
