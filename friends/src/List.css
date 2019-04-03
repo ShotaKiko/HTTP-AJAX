@@ -1,0 +1,23 @@
+.friendList{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center;
+    width: 20%;
+    
+    color: antiquewhite;
+    background-color: dodgerblue;
+    border: 2px solid dodgerblue;
+    margin-bottom: 20px;
+    cursor: pointer;
+
+    
+
+
+}
+
+.friendList:hover{
+    background-color: antiquewhite;
+    border: 2px solid darkblue;
+    color: darkblue;
+}
