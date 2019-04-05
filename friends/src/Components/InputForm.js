@@ -29,6 +29,7 @@ class InputForm extends React.Component{
             .post('http://localhost:5000/friends', this.state.newFriend)
             .then(response =>{
                 this.props.updateFriends(response.data)
+                this.props.history.push('/friend-list')
             })
             .catch(error => console.log(error))
     }

@@ -62,7 +62,7 @@ class App extends Component {
             <Friend
               {...props}
               list={this.state.friendList}
-              updateItems={this.updateFriends}
+              updateFriends={this.updateFriends}
             />
           )}
         />

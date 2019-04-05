@@ -8,16 +8,6 @@ function List (props){
         props.history.push(`/friend-list/${friend.id}`);
       }
     
-    // removeFriend = event =>{
-    //     console.log('friend to be removed')
-    //     axios
-    //         .delete(`http://localhost:5000/friends/${props.friend.id}`)
-    //         .then(response =>{
-    //             props.updateFriends(response.data);
-    //         })
-    //         .catch(err => console.log(err));
-    // }
-    
     return(
         props.list.map(friend =>(
             <div key= {friend.id} className='friendList' 
