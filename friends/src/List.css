@@ -1,0 +1,25 @@
+.friendList{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center;
+    width: 33%;
+    color: antiquewhite;
+    background-color: dodgerblue;
+    border: 2px solid dodgerblue;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+.friendList:hover{
+    background-color: antiquewhite;
+    border: 2px solid darkblue;
+    color: darkblue;
+}
+
+h2{
+    color: red;
+    font-weight: bolder;
+}
