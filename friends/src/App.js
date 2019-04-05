@@ -14,6 +14,10 @@ class App extends Component {
       friendList: []
     }
   }
+  
+  updateFriends = newFriend => {
+    this.setState({friendList: newFriend})
+  }
 
   componentDidMount(){
     axios.get('http://localhost:5000/friends')
@@ -22,6 +26,7 @@ class App extends Component {
     })
     .catch(err =>console.log('error', err))
   }
+
   
   render() {
     return (
@@ -32,7 +37,7 @@ class App extends Component {
           list ={this.state.friendList}
         />
 
-        <InputForm/>
+        <InputForm updateFriends={this.updateFriends}/>
       </div>
     );
   }

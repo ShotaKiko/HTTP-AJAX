@@ -59,6 +59,7 @@ class InputForm extends React.Component{
             value={this.state.newFriend.email}
             onChange={this.changeHandler}
             />
+            <button type="submit">Add New Friend</button>
           </form>
         )
     }
