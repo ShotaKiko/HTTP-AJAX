@@ -5,6 +5,7 @@ import axios from 'axios'
 import './App.css';
 import List from './List';
 import Home from './Home';
+import InputForm from './Components/InputForm'
 
 class App extends Component {
   constructor(){
@@ -30,7 +31,8 @@ class App extends Component {
         <List
           list ={this.state.friendList}
         />
-        {/* {console.log(this.state.friendList)} */}
+
+        <InputForm/>
       </div>
     );
   }
