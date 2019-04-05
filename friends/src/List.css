@@ -18,3 +18,8 @@
     border: 2px solid darkblue;
     color: darkblue;
 }
+
+h2{
+    color: red;
+    font-weight: bolder;
+}
